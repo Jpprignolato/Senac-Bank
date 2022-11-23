@@ -1,0 +1,39 @@
+Faça melhorias no projeto do banco fictício "Senac Bank".
+Utilizando os novos conceitos que aprendemos até agora, faça as alterações com o uso de classes. O projeto terá uma classe para Conta Corrente e uma para Conta Poupança;
+- A Conta Corrente deverá ter os atributos: número da conta, nome do titular, saldo corrente e os métodos: sacar, depositar e aplicar;
+- A Conta Poupança deverá ser herdeira da Conta Corrente e terá o atributo: saldo poupança e método resgatar (transferir da Poupança para conta Corrente);
+- Criem um método para mostrar os dados das contas com seus respectivos saldos (mostrar dados);
+- Deverá ter confirmação para cada operação realizada. Por exemplo: ao realizar um saque informar que o saque foi feito;
+
+- Observação1: O atributo saldo não deverá ser alterado diretamente, deverão ser criados métodos set e get para manipular o atributo saldo. E uma senha de 4 dígitos deverá ser solicitada ao usuário para efetuar, somente: saque, transferência (resgatar ou aplicar)  e mostrar dados. 
+- Observação2: A primeira ação que deverá ser feito é cadastrar a conta. Tem que ser solicitado ao usuário digitar o seu nome, um número de conta (esse número é aleatório, somente para a conta ter um número quando for mostrar os dados da conta). Vale lembrar que a conta só será devidamente efetivada após o primeiro depósito, somente depois de efetuado este depósito é que a conta é criada.
+Modelo:
+
+Entrada de dados
+________________________________________________________________________________________________________________
+Senac Bank
+Cadastrar Conta
+Nome do titular da conta: Amanda Silva
+Número da conta: 456
+Saldo: R$  0
+Realize seu primeiro depósito!
+Valor: 500
+Depósito efetuado com sucesso!
+Conta Criada!
+
+________________________________________________________________________________________________________________
+
+
+Saída de dados
+________________________________________________________________________________________________________________
+Senac Bank
++------------------------------------------------+
+| Titular Conta Corrente:  Amanda Silva
+| Número da conta:  456
+| Saldo atual: R$  500.00
++------------------------------------------------+
++------------------------------------------------+
+| Titular Conta Poupança:  Amanda Silva
+| Número da conta:  456
+| Saldo atual: R$  0.00
++------------------------------------------------+
